@@ -4,23 +4,20 @@
 //Ways to declare Variables
 //var, let, const
 
-
 //let and const were introduced because of scope
 
 //Outside and If Statement is function Scope
 //code outside of a method is global scope
 
-
-let firstName='Caleb';
-let lastName='Mbugua';
+let firstName = 'Caleb';
+let lastName = 'Mbugua';
 
 // console.log(firstName,lastName,ageOne,ageTwo);
-
 
 //for let, we must initialize a varibale before using it
 
 let age = 30;
-let ageOne =30;
+let ageOne = 30;
 
 //Var fails silently with undefined, if it is called before
 //it is initialized
@@ -32,8 +29,7 @@ console.log(age);
 //-Variable Names can be Only Letters,Numbers,Underscores and Dollar Signs
 // -Cannot start with a Number
 
-let name='caleb'
-
+let name = 'caleb';
 
 //Variable Naming Conventions
 //firstName = camelCase;
@@ -50,21 +46,19 @@ age = 31;
 
 console.log(age);
 
-
 //Declare a variable but not assign a Value
 let score;
 score = 1;
 console.log(score);
 
-if(true){
-    score = score + 1
+if (true) {
+  score = score + 1;
 }
 
 console.log(score);
 
-
 //USING CONST
-const x  = 100;
+const x = 100;
 
 //A constant cannot be direcly reassigned like this
 // x = 200;
@@ -72,21 +66,37 @@ const x  = 100;
 //You cannot also declare a const and not initialize it
 // const score1;
 
-
-//When i name my array with const,what i cannot do 
+//When i name my array with const,what i cannot do
 //is ressign it direcly
 
 //However i can user various array methods
 
-const arr = [1,2,3,4,5]
-arr.push(6)
+const arr = [1, 2, 3, 4, 5];
+arr.push(6);
 console.log(arr);
 
-
 const person = {
-name:"Caleb"
-}
+  name: 'Caleb',
+};
 
-person.name ="Mbugua"
-
+person.name = 'Mbugua';
+person.email = 'mbuguacaleb30@gmail.com';
 console.log(person);
+
+//Const is prefectly safe to use, since you can chnage
+//values insicde the no primitives, but also will give
+// you strictess not to chage a value you did not intend
+
+//Let can be used where we are ressigning
+
+//Declare  Multiple values at once
+
+let a, b, c;
+const d = 10,
+  e = 20,
+  f = 30;
+
+console.log(d);
+
+//Logging a value that is empty or has no value brings in undefiles
+console.log(a);
